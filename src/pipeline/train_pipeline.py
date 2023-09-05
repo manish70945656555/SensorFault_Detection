@@ -49,6 +49,7 @@ class TraininingPipeline:
         
 
     def run_pipeline(self):
+        #running the training pipeline
         try:
             feature_store_file_path = self.start_data_ingestion()
             train_arr, test_arr,preprocessor_path = self.start_data_transformation(feature_store_file_path)
